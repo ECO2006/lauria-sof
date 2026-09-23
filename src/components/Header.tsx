@@ -8,10 +8,12 @@ export default function Header({ photoCount }: { photoCount: number }) {
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-slate-950" />
 
       <div className="relative z-10 flex flex-col items-center px-4 text-center">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white drop-shadow-lg sm:text-7xl">
+        {/* Applicato il nuovo font "Caprasimo" (Cooper Black) qui */}
+        <h1 className="font-[family-name:var(--font-cooper)] text-5xl font-normal tracking-tight text-white drop-shadow-lg sm:text-7xl">
           Laurea Sofia
         </h1>
-        <p className="mt-3 text-lg font-medium text-blue-100 sm:text-xl">
+        {/* Applicato lo stesso font anche alla data per coerenza stilistica */}
+        <p className="font-[family-name:var(--font-cooper)] mt-3 text-lg font-normal text-blue-100 sm:text-xl">
           12 Ottobre 2026
         </p>
 
